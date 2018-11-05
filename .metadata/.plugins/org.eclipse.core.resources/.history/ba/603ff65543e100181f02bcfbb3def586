@@ -1,0 +1,11 @@
+package modal;
+
+public class Cliente {
+	private String codigo, nombre, apellido,telefono;
+	private int DNI;
+	
+	
+
+	
+
+}

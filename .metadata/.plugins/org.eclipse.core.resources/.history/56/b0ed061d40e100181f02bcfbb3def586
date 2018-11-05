@@ -1,0 +1,17 @@
+package Arreglos;
+
+import java.util.ArrayList;
+
+import modal.Cliente;
+
+public class ArrayCliente {
+	private ArrayList<Cliente> cli;
+
+	public ArrayCliente() {
+		cli = new ArrayList<Cliente>();
+		
+	}
+	
+	
+
+}

@@ -1,0 +1,15 @@
+package Arreglos;
+
+import java.util.ArrayList;
+
+import modal.Servicio;
+
+public class ArrayServicio {
+	ArrayList<Servicio> servi;
+
+	public ArrayServicio() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+}

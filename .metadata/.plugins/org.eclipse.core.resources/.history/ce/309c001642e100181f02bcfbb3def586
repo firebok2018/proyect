@@ -1,0 +1,24 @@
+package Arreglos;
+
+import java.util.ArrayList;
+
+import modal.Producto;
+
+public class ArrayProducto {
+	private ArrayList<Producto> pro;
+
+	public ArrayProducto() {
+		pro = new ArrayList<Producto>();
+		loadProducto();
+	}
+	public int tamaño(){
+		return pro.size();
+	}
+
+	private void loadProducto() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+}

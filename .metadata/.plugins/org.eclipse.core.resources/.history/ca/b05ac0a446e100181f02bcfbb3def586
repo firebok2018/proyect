@@ -1,0 +1,46 @@
+package Arreglos;
+
+import java.util.ArrayList;
+
+import modal.Servicio;
+
+public class ArrayServicio {
+	ArrayList<Servicio> servi;
+
+	public ArrayServicio() {
+		servi = new ArrayList<Servicio>();
+		cargarServicio();
+	}
+	public int tamaño(){
+		return servi.size();
+	}
+	public void adicionar(){
+		
+	}
+	
+	public void eliminar(){
+		
+	}
+	private Servicio obtener(int pos) {
+		// TODO Auto-generated method stub
+		return servi.get(pos);
+	}
+
+	public Servicio buscar(int codigo){
+		Servicio s;
+		for (int i = 0; i < tamaño(); i++) {
+			s=obtener(i);
+			if (codigo == s.getCodigo()) {
+				return s;
+				
+			}
+		}
+		return null;
+	}
+	
+	private void cargarServicio() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

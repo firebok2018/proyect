@@ -1,0 +1,49 @@
+package view;
+
+import java.awt.EventQueue;
+
+import javax.swing.JInternalFrame;
+import javax.swing.JButton;
+import java.awt.BorderLayout;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class JIFRegisCliente extends JInternalFrame {
+	private JLabel lblNCodigo;
+	private JTextField textField;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					JIFRegisCliente frame = new JIFRegisCliente();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public JIFRegisCliente() {
+		setBounds(100, 100, 860, 539);
+		getContentPane().setLayout(null);
+		
+		lblNCodigo = new JLabel("N\u00B0 Codigo:");
+		lblNCodigo.setBounds(26, 24, 68, 14);
+		getContentPane().add(lblNCodigo);
+		
+		textField = new JTextField();
+		textField.setEnabled(false);
+		textField.setBounds(99, 21, 86, 20);
+		getContentPane().add(textField);
+		textField.setColumns(10);
+
+	}
+}

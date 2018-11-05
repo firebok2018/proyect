@@ -1,0 +1,30 @@
+package Arreglos;
+
+import java.util.ArrayList;
+
+import modal.Servicio;
+
+public class ArrayServicio {
+	ArrayList<Servicio> servi;
+
+	public ArrayServicio() {
+		servi = new ArrayList<Servicio>();
+		cargarServicio();
+	}
+	public void adicionar(){
+		
+	}
+	
+	public void eliminar(){
+		
+	}
+
+	public Servicio buscar(int codigo){
+		Servicio s;
+	}
+	private void cargarServicio() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

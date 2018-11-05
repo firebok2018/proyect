@@ -1,0 +1,66 @@
+package Arreglos;
+
+import java.io.FileWriter;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+
+import modal.Cliente;
+
+public class ArrayCliente {
+	private ArrayList<Cliente> cli;
+
+	public ArrayCliente() {
+		cli = new ArrayList<Cliente>();
+		loadCliente();
+	}
+	public int tamaño(){
+		return cli.size();
+	}
+	public void eliminar(Cliente c){
+		cli.remove(c);
+	}
+	public Cliente obtener(int pos){
+		return cli.get(pos);
+	}
+	public void adicionar(Cliente c){
+		cli.add(c);
+	}
+	public Cliente buscar(int DNI){
+		Cliente c;
+		for (int i = 0; i < tamaño(); i++) {
+			c=obtener(i);
+			if (c.getDNI().equals(DNI)) {
+				return c;
+			}
+		}
+		return null;
+		
+	}
+
+	
+	private void loadCliente() {
+		// TODO Auto-generated method stub
+		try{
+			PrintWriter pw;
+			String linea;
+			Cliente c;
+			pw = new PrintWriter(new FileWriter("Cliente.txt"));
+			for (int i=0; i<tamaño(); i++)
+			{
+				c=obtener(i);
+				linea=	c.getDNI()+";"+
+						c.getNombre()+";"+
+						c.getApellido()+";"+
+						c.getTelefono();
+				pw.println(linea);
+			}
+			pw.close();
+		}
+		catch(Exception e){
+			
+		}
+	}
+	
+	
+
+}

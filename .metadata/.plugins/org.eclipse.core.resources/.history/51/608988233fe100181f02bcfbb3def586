@@ -1,0 +1,11 @@
+package modal;
+
+public class Producto {
+	private int Codigo;
+	private String Nombre;
+	private String Tipo;
+	private String SubTipo;
+	private int Stock;
+	private double Precio;
+
+}
